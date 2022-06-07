@@ -1,8 +1,11 @@
 package com.example.learningapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +18,12 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson);
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+        ColorDrawable colorDrawable =
+                new ColorDrawable(Color.parseColor("#F50057"));
+        assert actionBar != null;
+        actionBar.setBackgroundDrawable(colorDrawable);
         findViewById(R.id.buttonA).setOnClickListener(this);
         findViewById(R.id.buttonB).setOnClickListener(this);
         findViewById(R.id.buttonC).setOnClickListener(this);
@@ -46,13 +55,13 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
 
         Intent i;
-        String message;
+        String message , src ;
         switch (v.getId()){
 
             case R.id.buttonA:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "A for apple";
-                i.putExtra("Aa", message);
+                src = "apple.jpg";
+                i.putExtra("Aa", src);
                 startActivity(i);
                 break;
 
