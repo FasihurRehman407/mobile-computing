@@ -64,7 +64,7 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
                 i.putExtra("Aa", src);
                 startActivity(i);
                 break;
-
+//hi
             case R.id.buttonB:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
                 message = "B";
