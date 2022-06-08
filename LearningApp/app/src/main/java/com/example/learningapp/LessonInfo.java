@@ -24,7 +24,8 @@ public class LessonInfo extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setBackgroundDrawable(colorDrawable);
         Intent intent = getIntent();
-        String src = intent.getStringExtra("Aa");
+        String src = intent.getStringExtra("img");
+        String msg = intent.getStringExtra("text");
         ImageView img= (ImageView) findViewById(R.id.lessonImg);
         int j = getResources().getIdentifier(src, "drawable", getPackageName());
         img.setImageResource(j);

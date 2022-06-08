@@ -60,11 +60,12 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
 
             case R.id.buttonA:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "apple.jpg";
-                i.putExtra("Aa", src);
+                src = "apple";
+                i.putExtra("text", "A for");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
-//hi
+
             case R.id.buttonB:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
                 message = "B";
