@@ -27,6 +27,8 @@ public class LessonInfo extends AppCompatActivity {
         String src = intent.getStringExtra("img");
         String msg = intent.getStringExtra("text");
         ImageView img= (ImageView) findViewById(R.id.lessonImg);
+        TextView textView = (TextView) findViewById(R.id.lessonText);
+        textView.setText(msg);
         int j = getResources().getIdentifier(src, "drawable", getPackageName());
         img.setImageResource(j);
     }
