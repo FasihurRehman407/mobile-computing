@@ -173,8 +173,8 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.buttonQ:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "queen";
-                i.putExtra("text","Q for Queen");
+                src = "quilt";
+                i.putExtra("text","Q for Quilt");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
