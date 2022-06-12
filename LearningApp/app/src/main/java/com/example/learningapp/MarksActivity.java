@@ -24,10 +24,11 @@ public class MarksActivity extends AppCompatActivity {
         actionBar.setBackgroundDrawable(colorDrawable);
         Intent intent = getIntent();
         int total = intent.getIntExtra("marks",0);
-        textView1.findViewById(R.id.textView15);
-        textView2.findViewById(R.id.textView16);
-        textView1.setText(total);
-        textView1.setText((total/7)*100);
+        Log.d("!!!", String.valueOf(total));
+        textView1=findViewById(R.id.textView15);
+        textView2=findViewById(R.id.textView16);
+        textView1.setText(String.valueOf(total));
+        textView2.setText(String.valueOf((total/7)*100));
 
     }
 }
