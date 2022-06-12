@@ -21,8 +21,7 @@ public class MarksActivity extends AppCompatActivity {
                 new ColorDrawable(Color.parseColor("#F50057"));
         assert actionBar != null;
         actionBar.setBackgroundDrawable(colorDrawable);
-//        Intent intent = getIntent();
-//        String marks = intent.getStringExtra("marks");
-//        Log.d("@@@", marks);
+        Intent intent = getIntent();
+        String total= intent.getStringExtra("marks");
     }
 }

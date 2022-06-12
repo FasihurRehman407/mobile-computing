@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class QuizActivity extends AppCompatActivity {
     String[] key= {"Snake","Bat","Quilt","Elephant","Yacht","Goat","Truck"};
-    int count;
+    int count =0;
     ArrayList<String> userOpts = new ArrayList<String>();
     Button submitBtn;
     RadioGroup g1,g2,g3,g4,g5,g6,g7;
