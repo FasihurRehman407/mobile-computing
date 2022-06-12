@@ -16,7 +16,7 @@
             android:name=".MarksActivity"
             android:exported="false"
             android:label="Marks"
-            android:parentActivityName=".QuizActivity"
+            android:parentActivityName=".MarksActivity"
             />
         <activity
             android:name=".QuizActivity"
