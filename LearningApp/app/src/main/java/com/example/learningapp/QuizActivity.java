@@ -8,7 +8,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 public class QuizActivity extends AppCompatActivity {
-
+    String[] key= {"b","c","a","d","a","a","d"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

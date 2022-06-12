@@ -38,19 +38,19 @@
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/a1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Apple" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/b1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Snake" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/c1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Water" />
@@ -74,19 +74,19 @@
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/radioButton6"
+                    android:id="@+id/a2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ball" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/b2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Wicket" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/c2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bat" />
@@ -110,19 +110,19 @@
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/radioButton10"
+                    android:id="@+id/a3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Quilt" />
 
                 <RadioButton
-                    android:id="@+id/radioButton8"
+                    android:id="@+id/b3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ball" />
 
                 <RadioButton
-                    android:id="@+id/radioButton7"
+                    android:id="@+id/c3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Arrow" />
@@ -146,19 +146,19 @@
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/radioButton13"
+                    android:id="@+id/a4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Queen" />
 
                 <RadioButton
-                    android:id="@+id/radioButton12"
+                    android:id="@+id/b4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Gate" />
 
                 <RadioButton
-                    android:id="@+id/radioButton11"
+                    android:id="@+id/c4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Elephant" />
@@ -276,7 +276,8 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:backgroundTint="#F50057"
+                android:text="Submit" />
 
         </LinearLayout>
     </ScrollView>
