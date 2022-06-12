@@ -91,31 +91,11 @@ public class QuizActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                int q1=g1.getCheckedRadioButtonId();
-//                btn1=(RadioButton)findViewById(q1);
-//                Log.d("***", (String) btn1.getText());
-//                int q2=g2.getCheckedRadioButtonId();
-//                btn2=(RadioButton)findViewById(q2);
-//                int q3=g3.getCheckedRadioButtonId();
-//                btn3=(RadioButton)findViewById(q3);
-//                int q4=g4.getCheckedRadioButtonId();
-//                btn4=(RadioButton)findViewById(q4);
-//                int q5=g5.getCheckedRadioButtonId();
-//                btn5=(RadioButton)findViewById(q5);
-//                int q6=g6.getCheckedRadioButtonId();
-//                btn6=(RadioButton)findViewById(q6);
-//                int q7=g7.getCheckedRadioButtonId();
-//                btn7=(RadioButton)findViewById(q7);
                 for (int i = 0; i < userOpts.size(); i++) {
                     if(userOpts.get(i).matches(key[i])){
-                        Log.d("@@@", userOpts.get(i));
-
+                        count++;
                     }
                 }
-
-
-
-
             }
         });
     }
