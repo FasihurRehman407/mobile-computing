@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button lessonBtn , reposBtn;
+    Button lessonBtn , reposBtn , quizBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setBackgroundDrawable(colorDrawable);
         lessonBtn=findViewById(R.id.lessonBtn);
         reposBtn=findViewById(R.id.reposBtn);
+        quizBtn.findViewById(R.id.quizBtn);
+        
+        quizBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,QuizActivity.class);
+                startActivity(intent);
+            }
+        });
         reposBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -14,10 +14,15 @@
         android:theme="@style/Theme.LearningApp"
         tools:targetApi="31">
         <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:label="Quiz"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".LessonInfo"
             android:exported="false"
-            android:parentActivityName=".LessonActivity"
-            android:label="Kido Learn"/>
+            android:label="Kido Learn"
+            android:parentActivityName=".LessonActivity" />
         <activity
             android:name=".LessonActivity"
             android:exported="false"
