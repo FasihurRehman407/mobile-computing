@@ -8,9 +8,10 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MarksActivity extends AppCompatActivity {
-
+    TextView textView1 , textView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,11 @@ public class MarksActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setBackgroundDrawable(colorDrawable);
         Intent intent = getIntent();
-        String total= intent.getStringExtra("marks");
+        int total = intent.getIntExtra("marks",0);
+        textView1.findViewById(R.id.textView15);
+        textView2.findViewById(R.id.textView16);
+        textView1.setText(total);
+        textView1.setText((total/7)*100);
+
     }
 }
