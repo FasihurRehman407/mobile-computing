@@ -3,9 +3,11 @@ package com.example.learningapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 
 public class MarksActivity extends AppCompatActivity {
 
@@ -19,5 +21,8 @@ public class MarksActivity extends AppCompatActivity {
                 new ColorDrawable(Color.parseColor("#F50057"));
         assert actionBar != null;
         actionBar.setBackgroundDrawable(colorDrawable);
+//        Intent intent = getIntent();
+//        String marks = intent.getStringExtra("marks");
+//        Log.d("@@@", marks);
     }
 }
