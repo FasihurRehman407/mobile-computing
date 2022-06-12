@@ -28,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
         reposBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://www.github.com/FasihurRrehman407");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+               
             }
         });
         lessonBtn.setOnClickListener(new View.OnClickListener() {
