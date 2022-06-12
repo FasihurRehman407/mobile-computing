@@ -24,6 +24,13 @@ public class QuizActivity extends AppCompatActivity {
                 new ColorDrawable(Color.parseColor("#F50057"));
         assert actionBar != null;
         actionBar.setBackgroundDrawable(colorDrawable);
+        g1=(RadioGroup)findViewById(R.id.g1);
+        g2=(RadioGroup)findViewById(R.id.g2);
+        g3=(RadioGroup)findViewById(R.id.g3);
+        g4=(RadioGroup)findViewById(R.id.g4);
+        g5=(RadioGroup)findViewById(R.id.g5);
+        g6=(RadioGroup)findViewById(R.id.g6);
+        g7=(RadioGroup)findViewById(R.id.g7);
         submitBtn = findViewById(R.id.submitQuiz);
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override

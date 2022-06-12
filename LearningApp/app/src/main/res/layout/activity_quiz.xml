@@ -33,7 +33,7 @@
                 app:srcCompat="@drawable/snake" />
 
             <RadioGroup
-                android:id="@+id/radioGroup1"
+                android:id="@+id/g1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -70,6 +70,7 @@
                 app:srcCompat="@drawable/bat" />
 
             <RadioGroup
+                android:id="@+id/g2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -106,6 +107,7 @@
                 app:srcCompat="@drawable/quilt" />
 
             <RadioGroup
+                android:id="@+id/g3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -142,6 +144,7 @@
                 app:srcCompat="@drawable/elephant" />
 
             <RadioGroup
+                android:id="@+id/g4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -178,6 +181,7 @@
                 app:srcCompat="@drawable/yacht" />
 
             <RadioGroup
+                android:id="@+id/g5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -214,6 +218,7 @@
                 app:srcCompat="@drawable/goat" />
 
             <RadioGroup
+                android:id="@+id/g6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -250,6 +255,7 @@
                 app:srcCompat="@drawable/truck" />
 
             <RadioGroup
+                android:id="@+id/g7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
