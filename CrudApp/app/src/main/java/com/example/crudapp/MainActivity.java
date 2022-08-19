@@ -65,13 +65,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String res = adapterView.getItemAtPosition(i).toString();
                 String arr[] =res.split(",");
-                String name= arr[0].split("=")[1];
-                String rollNo = arr[1].split("=")[1];
-                String enroll = arr[2].split("=")[1];
+                String id= arr[0].split("=")[1];
+                String name = arr[1].split("=")[1];
+                String rollNo = arr[2].split("=")[1];
+                String enroll = arr[3].split("=")[1];
                 Intent intent =new Intent(MainActivity.this , UpdateDeleteActivity.class);
                 intent.putExtra("name", name);
                 intent.putExtra("rollNo", rollNo);
                 intent.putExtra("enroll", enroll);
+                intent.putExtra("id",id);
                 startActivity(intent);
             }
         });
