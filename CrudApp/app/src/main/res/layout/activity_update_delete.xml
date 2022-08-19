@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UpdateDeleteActivity">
+
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/updateName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editRollNo"
+        android:id="@+id/updateRollno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -30,10 +31,10 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        app:layout_constraintTop_toBottomOf="@+id/updateName" />
 
     <Switch
-        android:id="@+id/editSwitch"
+        android:id="@+id/switchUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -44,32 +45,25 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editRollNo" />
+        app:layout_constraintTop_toBottomOf="@+id/updateRollno" />
 
     <Button
-        android:id="@+id/viewBtn"
+        android:id="@+id/updateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ButtonViewAll"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSwitch" />
+        android:layout_marginTop="40dp"
+        android:text="Update Record"
+        app:layout_constraintTop_toBottomOf="@+id/switchUpdate"
+        tools:layout_editor_absoluteX="127dp" />
 
     <Button
-        android:id="@+id/buttonAdd"
+        android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSwitch" />
-
-    <ListView
-        android:id="@+id/listViewStudent"
-        android:layout_width="400dp"
-        android:layout_height="518dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+        android:layout_marginTop="8dp"
+        android:text="Delete Record"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn"
+        tools:layout_editor_absoluteX="127dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

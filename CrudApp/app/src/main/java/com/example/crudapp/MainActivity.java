@@ -2,8 +2,8 @@ package com.example.crudapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,9 +14,6 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import java.util.List;
-
-
-import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     Button buttonAdd, buttonViewAll;
@@ -29,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buttonAdd = findViewById(R.id.buttonAdd);
-        buttonViewAll = findViewById(R.id.buttonViewAll);
-        editName = findViewById(R.id.editTextName);
-        editRollNumber = findViewById(R.id.editTextRollNumber);
-        switchIsActive = findViewById(R.id.switchStudent);
+        buttonViewAll = findViewById(R.id.viewBtn);
+        editName = findViewById(R.id.editName);
+        editRollNumber = findViewById(R.id.editName);
+        switchIsActive = findViewById(R.id.editSwitch);
         listViewStudent = findViewById(R.id.listViewStudent);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
@@ -67,13 +64,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String res = adapterView.getItemAtPosition(i).toString();
-                String arr[] ={};
-                arr = res.split(",");
-//                String[] name= arr[0].split("");
-                String rollNo = arr[1];
-                String enroll = arr[3];
-//                Log.d("@@@", String.valueOf(name));
-
+                String arr[] =res.split(",");
+                String name= arr[0].split("=")[1];
+                String rollNo = arr[1].split("=")[1];
+                String enroll = arr[2].split("=")[1];
+                Intent intent =new Intent(MainActivity.this , UpdateDeleteActivity.class);
+                intent.putExtra("name", name);
+                intent.putExtra("rollNo", rollNo);
+                intent.putExtra("enroll", enroll);
+                startActivity(intent);
             }
         });
 
