@@ -3,7 +3,9 @@ package com.example.crudapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -58,6 +60,19 @@ public class MainActivity extends AppCompatActivity {
                 ArrayAdapter arrayAdapter = new ArrayAdapter<StudentModel>
                         (MainActivity.this, android.R.layout.simple_list_item_1,list);
                 listViewStudent.setAdapter(arrayAdapter);
+
+            }
+        });
+        listViewStudent.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String res = adapterView.getItemAtPosition(i).toString();
+                String arr[] ={};
+                arr = res.split(",");
+//                String[] name= arr[0].split("");
+                String rollNo = arr[1];
+                String enroll = arr[3];
+//                Log.d("@@@", String.valueOf(name));
 
             }
         });
