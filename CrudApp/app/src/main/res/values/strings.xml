@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">CrudApp</string>
+    <string name="app_name">Crud App</string>
+    <string name="StudentName">Enter student name</string>
+    <string name="RollNumber">Enter roll number</string>
+    <string name="IsEnrolled">Enrolled</string>
+    <string name="ButtonViewAll">View All Records</string>
+    <string name="Add">Add Record</string>
+
 </resources>
