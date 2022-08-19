@@ -14,9 +14,9 @@ public class StudentModel {
                 '}';
     }
 
-    public StudentModel(String name, int rollNmber, boolean isEnroll) {
+    public StudentModel(String name, int rollNumber, boolean isEnroll) {
         this.name = name;
-        this.rollNmber = rollNmber;
+        this.rollNmber = rollNumber;
         this.isEnroll = isEnroll;
     }
 
@@ -32,8 +32,8 @@ public class StudentModel {
         return rollNmber;
     }
 
-    public void setRollNmber(int rollNmber) {
-        this.rollNmber = rollNmber;
+    public void setRollNumber(int rollNumber) {
+        this.rollNmber = rollNumber;
     }
 
     public boolean isEnroll() {
