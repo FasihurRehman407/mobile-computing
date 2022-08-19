@@ -66,21 +66,11 @@
         app:layout_constraintTop_toTopOf="@+id/buttonViewAll"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ListView
-        android:id="@+id/listViewStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
         android:text="Update Record"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +85,12 @@
         android:text="Delete Record"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+    <ListView
+        android:id="@+id/listViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
