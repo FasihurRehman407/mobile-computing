@@ -2,21 +2,20 @@ package com.example.crudapp;
 
 public class StudentModel {
     private String name;
-    private int rollNmber;
+    private int rollNumber;
     private boolean isEnroll;
 
     @Override
     public String toString() {
-        return "StudentModel{" +
+        return "Student Info: \n" +
                 "name='" + name + '\'' +
-                ", rollNmber=" + rollNmber +
-                ", isEnroll=" + isEnroll +
-                '}';
+                ", rollNumber=" + rollNumber +
+                ", isEnroll=" + isEnroll;
     }
 
     public StudentModel(String name, int rollNumber, boolean isEnroll) {
         this.name = name;
-        this.rollNmber = rollNumber;
+        this.rollNumber = rollNumber;
         this.isEnroll = isEnroll;
     }
 
@@ -29,11 +28,11 @@ public class StudentModel {
     }
 
     public int getRollNmber() {
-        return rollNmber;
+        return rollNumber;
     }
 
     public void setRollNumber(int rollNumber) {
-        this.rollNmber = rollNumber;
+        this.rollNumber = rollNumber;
     }
 
     public boolean isEnroll() {
