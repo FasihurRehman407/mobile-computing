@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAdd = findViewById(R.id.buttonAdd);
         buttonViewAll = findViewById(R.id.viewBtn);
         editName = findViewById(R.id.editName);
-        editRollNumber = findViewById(R.id.editName);
+        editRollNumber = findViewById(R.id.editRollNo);
         switchIsActive = findViewById(R.id.editSwitch);
         listViewStudent = findViewById(R.id.listViewStudent);
 

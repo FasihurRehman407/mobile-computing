@@ -25,6 +25,6 @@ public class UpdateDeleteActivity extends AppCompatActivity {
         String enroll=i.getStringExtra("enroll");
         t1.setText(name);
         t2.setText(rollNo);
-        s.setText(enroll);
+        s.setChecked(Boolean.parseBoolean(enroll));
     }
 }
