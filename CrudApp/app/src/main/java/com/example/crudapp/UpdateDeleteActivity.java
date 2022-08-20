@@ -42,8 +42,21 @@ public class UpdateDeleteActivity extends AppCompatActivity {
                 }
                 DBHelper dbHelper  = new DBHelper(UpdateDeleteActivity.this);
                 dbHelper.updateStudent(sm);
+                Toast.makeText(UpdateDeleteActivity.this, "Updated", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(UpdateDeleteActivity.this , MainActivity.class);
+                startActivity(i);
+
             }
         });
-        btnD.setOnClickListener();
+        btnD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DBHelper dbHelper  = new DBHelper(UpdateDeleteActivity.this);
+                dbHelper.deleteStudent(id);
+                Toast.makeText(UpdateDeleteActivity.this, "Deleted", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(UpdateDeleteActivity.this , MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
