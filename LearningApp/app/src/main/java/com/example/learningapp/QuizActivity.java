@@ -40,11 +40,17 @@ public class QuizActivity extends AppCompatActivity {
         g6=(RadioGroup)findViewById(R.id.g6);
         g7=(RadioGroup)findViewById(R.id.g7);
         submitBtn = findViewById(R.id.submitQuiz);
+        submitBtn.setEnabled(false);
         g1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn1=findViewById(i);
                 userOpts.add((String) btn1.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -52,6 +58,11 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn2=findViewById(i);
                 userOpts.add((String) btn2.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -59,6 +70,11 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn3=findViewById(i);
                 userOpts.add((String) btn3.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -66,6 +82,11 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn4=findViewById(i);
                 userOpts.add((String) btn4.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -73,6 +94,11 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn5=findViewById(i);
                 userOpts.add((String) btn5.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g6.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -80,6 +106,11 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn6=findViewById(i);
                 userOpts.add((String) btn6.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
         g7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -87,13 +118,19 @@ public class QuizActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 btn7=findViewById(i);
                 userOpts.add((String) btn7.getText());
+                if(userOpts.size()<7){
+                    submitBtn.setEnabled(false);
+                }else if(userOpts.size()==7){
+                    submitBtn.setEnabled(true);
+                }
             }
         });
+
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                for (int i = 0; i < userOpts.size(); i++) {
-                    if(userOpts.get(i).matches(key[i])){
+                for (int i = 0; i <7; i++) {
+                    if (userOpts.get(i).matches(key[i])) {
                         count++;
                     }
                 }
