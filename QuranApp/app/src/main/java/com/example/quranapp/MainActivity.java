@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -37,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.surah:
                     Intent i = new Intent(MainActivity.this, ParahActivity.class);
                     startActivity(i);
+                    Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+                    break;
             }
+            return true;
         });
 
     }

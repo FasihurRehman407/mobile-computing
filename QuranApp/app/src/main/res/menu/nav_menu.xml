@@ -5,14 +5,14 @@
 
     <item
         android:id="@+id/surah"
-        android:title="My Account" />
+        android:title="Surahs" />
 
     <item
         android:id="@+id/parah"
-        android:title="Settings" />
+        android:title="Parahs" />
 
     <item
         android:id="@+id/search_by_surah"
-        android:title="Logout" />
+        android:title="Search" />
 
 </menu>
