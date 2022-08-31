@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         navView = findViewById(R.id.navView);
         navView.setNavigationItemSelectedListener((menuItem)->{
             switch (menuItem.getItemId()) {
-                case R.id.surah:
+                case R.id.parah:
                     Intent i = new Intent(MainActivity.this, ParahActivity.class);
                     startActivity(i);
                     Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
