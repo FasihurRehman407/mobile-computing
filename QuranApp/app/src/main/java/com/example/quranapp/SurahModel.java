@@ -6,7 +6,7 @@ public class SurahModel {
 
     @Override
     public String toString() {
-        return id + name;
+        return id +" "+ name;
     }
 
     public SurahModel(String name) {
