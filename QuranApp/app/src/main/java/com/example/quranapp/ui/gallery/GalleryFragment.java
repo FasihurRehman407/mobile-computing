@@ -2,6 +2,7 @@ package com.example.quranapp.ui.gallery;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,7 @@ public class GalleryFragment extends Fragment {
                 String name = arr[1];
                 Intent intent = new Intent(getContext(), SurahDetailActivity.class);
                 intent.putExtra("name",name);
+                intent.putExtra("id",id);
                 startActivity(intent);
 
             }
