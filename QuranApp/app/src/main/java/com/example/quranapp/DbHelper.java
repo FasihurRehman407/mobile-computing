@@ -68,5 +68,20 @@ public class DbHelper extends SQLiteOpenHelper{
         cursorCourses.close();
         return surahDetailsArrayList;
     }
+    public ArrayList getAllParahNames(int id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + "tayah " + "WHERE paraID="+id, null);
+        ArrayList<ParahModel> parahArrayList = new ArrayList<ParahModel>();
+
+        if (cursorCourses.moveToFirst()) {
+            do {
+                parahArrayList.add(new ParahModel("Para",cursorCourses.getString(10)));
+            } while (cursorCourses.moveToNext());
+        }
+        cursorCourses.close();
+        return parahArrayList;
+    }
 
 }
