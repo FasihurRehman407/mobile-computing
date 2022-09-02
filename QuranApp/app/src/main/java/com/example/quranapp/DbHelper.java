@@ -56,7 +56,8 @@ public class DbHelper extends SQLiteOpenHelper{
 
         if(id!=1){
             surahDetailsArrayList.add(new SurahDetailModel("بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ",
-                    "شروع اللہ کا نام لے کر جو بڑا مہربان نہایت رحم والا ہے۔","With the name of Allah, the All-Merciful, the Very-Merciful."));
+                    "شروع اللہ کا نام لے کر جو بڑا مہربان نہایت رحم والا ہے۔","With the name of Allah," +
+                    " the All-Merciful, the Very-Merciful."));
         }
         if (cursorCourses.moveToFirst()) {
             do {
