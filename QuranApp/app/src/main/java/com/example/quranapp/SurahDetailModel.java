@@ -17,7 +17,6 @@ public class SurahDetailModel {
     }
 
 
-
     public String getArabicText() {
         return ArabicText;
     }
