@@ -25,8 +25,4 @@
 
     </com.google.android.material.navigation.NavigationView>
 
-    <ListView
-        android:id="@+id/paraView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -3,6 +3,7 @@ package com.example.quranapp;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -16,6 +17,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.quranapp.databinding.ActivityMainBinding;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
     }
 
     @Override
