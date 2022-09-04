@@ -22,7 +22,6 @@ public class SurahDetailActivity extends AppCompatActivity {
         Intent i = getIntent();
         String name=i.getStringExtra("name");
         String id = i.getStringExtra("id");
-        Log.d("@@@", id);
         ListView listView = findViewById(R.id.detailsView);
         DbHelper dbHelper = new DbHelper(SurahDetailActivity.this);
         List<SurahModel> list = dbHelper.getSurahDetails(Integer.parseInt(id));
