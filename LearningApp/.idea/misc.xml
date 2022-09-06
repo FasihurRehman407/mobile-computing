@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/mobile-computing/LearningApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2645" />
-        <entry key="..\:/mobile-computing/LearningApp/app/src/main/res/layout/activity_lesson.xml" value="0.8800000000000001" />
+        <entry key="..\:/mobile-computing/LearningApp/app/src/main/res/layout/activity_lesson.xml" value="0.2" />
+        <entry key="..\:/mobile-computing/LearningApp/app/src/main/res/layout/activity_lesson_info.xml" value="0.259375" />
         <entry key="..\:/mobile-computing/LearningApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
       </map>
     </option>
