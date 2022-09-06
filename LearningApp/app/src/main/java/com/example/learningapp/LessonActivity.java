@@ -45,11 +45,85 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
+        Intent i;
+        String message;
         switch (v.getId()){
 
             case R.id.buttonA:
-                Intent i = new Intent(LessonActivity.this , LessonInfo.class);
-                String message = "A for apple";
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;
+
+            case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "B";
+                i.putExtra("Bb", message);
+                startActivity(i);
+                break;    case R.id.buttonC:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "C";
+                i.putExtra("Cc", message);
+                startActivity(i);
+                break;    case R.id.buttonD:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "D";
+                i.putExtra("Dd", message);
+                startActivity(i);
+                break;    case R.id.buttonE:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Ee", message);
+                startActivity(i);
+                break;    case R.id.buttonF:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "F";
+                i.putExtra("Ff", message);
+                startActivity(i);
+                break;    case R.id.buttonG:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "G";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
+                i.putExtra("Aa", message);
+                startActivity(i);
+                break;    case R.id.buttonB:
+                i = new Intent(LessonActivity.this , LessonInfo.class);
+                message = "A for apple";
                 i.putExtra("Aa", message);
                 startActivity(i);
                 break;
