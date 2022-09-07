@@ -13,7 +13,7 @@ public class LessonInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_info);
         Intent intent = getIntent();
-        String message = intent.getStringExtra("Aa");
+        String message = intent.getStringExtra("Zz");
         TextView textView = findViewById(R.id.textView3);
         textView.setText(message);
     }
