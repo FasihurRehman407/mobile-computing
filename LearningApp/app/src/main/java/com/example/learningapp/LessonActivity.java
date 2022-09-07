@@ -78,144 +78,167 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
                 src = "cat";
                 i.putExtra("text","C for Cat");
                 i.putExtra("img", src);
-                    startActivity(i);
+                startActivity(i);
                 break;
                 case R.id.buttonD:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "D";
-                i.putExtra("Dd", message);
+                    src = "dog";
+                    i.putExtra("text","D for Dog");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonE:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "A for apple";
-                i.putExtra("Ee", message);
+                    src = "elephant";
+                    i.putExtra("text","E for Elephant");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonF:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "F";
-                i.putExtra("Ff", message);
+                    src = "fish";
+                    i.putExtra("text","F for Fish");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonG:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "G";
-                i.putExtra("Gg", message);
+                    src = "goat";
+                    i.putExtra("text","G for Goat");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonH:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "H";
-                i.putExtra("Hh", message);
+                    src = "hen";
+                    i.putExtra("text","H for Hen");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonI:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "I";
-                i.putExtra("Ii", message);
+                    src = "ink";
+                    i.putExtra("text","I for Ink");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonJ:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "J";
-                i.putExtra("Jj", message);
+                    src = "jug";
+                    i.putExtra("text","J for Jug");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonK:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "K";
-                i.putExtra("Kk", message);
+                    src = "kite";
+                    i.putExtra("text","K for Kite");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonL:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "L";
-                i.putExtra("Ll", message);
+                    src = "";
+                    i.putExtra("text","C for Cat");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonM:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "M";
-                i.putExtra("Mm", message);
+                    src = "cat";
+                    i.putExtra("text","C for Cat");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonN:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "N";
-                i.putExtra("Nn", message);
+                    src = "cat";
+                    i.putExtra("text","C for Cat");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonO:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "O";
-                i.putExtra("Oo", message);
+                    src = "cat";
+                    i.putExtra("text","C for Cat");
+                    i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonP:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "P";
-                i.putExtra("Pp", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonQ:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "Q";
-                i.putExtra("Qq", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonR:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "R";
-                i.putExtra("Rr", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonS:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "S";
-                i.putExtra("Ss", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonT:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "T";
-                i.putExtra("Tt", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonU:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "U";
-                i.putExtra("Uu", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonV:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "V";
-                i.putExtra("Vv", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonW:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "W";
-                i.putExtra("Ww", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonX:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "X";
-                i.putExtra("Xx", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonY:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "Y";
-                i.putExtra("Yy", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonZ:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                message = "Z";
-                i.putExtra("Zz", message);
+                src = "cat";
+                i.putExtra("text","C for Cat");
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
         }
