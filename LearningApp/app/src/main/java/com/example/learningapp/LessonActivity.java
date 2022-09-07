@@ -138,78 +138,78 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
                 break;
                 case R.id.buttonL:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                    src = "";
-                    i.putExtra("text","C for Cat");
+                    src = "lamp";
+                    i.putExtra("text","L for Lamp");
                     i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonM:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                    src = "cat";
-                    i.putExtra("text","C for Cat");
+                    src = "moon";
+                    i.putExtra("text","M for Moon");
                     i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonN:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                    src = "cat";
-                    i.putExtra("text","C for Cat");
+                    src = "nest";
+                    i.putExtra("text","N for Nest");
                     i.putExtra("img", src);
                 startActivity(i);
                 break;
                 case R.id.buttonO:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                    src = "cat";
-                    i.putExtra("text","C for Cat");
+                    src = "owl";
+                    i.putExtra("text","O for Owl");
                     i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonP:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "pakistan";
+                i.putExtra("text","P for Pakistan");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonQ:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "queen";
+                i.putExtra("text","Q for Queen");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonR:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "rat";
+                i.putExtra("text","R for Rat");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonS:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "snake";
+                i.putExtra("text","S for Snake");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonT:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "truck";
+                i.putExtra("text","T for Truck");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonU:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "umbrella";
+                i.putExtra("text","U for Umbrella");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonV:
                 i = new Intent(LessonActivity.this , LessonInfo.class);
-                src = "cat";
-                i.putExtra("text","C for Cat");
+                src = "violin";
+                i.putExtra("text","V for Violin");
                 i.putExtra("img", src);
                 startActivity(i);
                 break;
