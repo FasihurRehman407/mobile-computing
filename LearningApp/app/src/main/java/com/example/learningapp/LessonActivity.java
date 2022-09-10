@@ -196,7 +196,7 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
                 i = new Intent(LessonActivity.this , LessonInfo.class);
                 src = "truck";
                 i.putExtra("text","T for Truck");
-                
+                i.putExtra("img", src);
                 startActivity(i);
                 break;
             case R.id.buttonU:
